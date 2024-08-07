@@ -26,6 +26,7 @@ const Second_Page = () => {
             setTimeout(() => {
                 setDrawerOpen(false);
             }, 10000);
+            setLoading(true);
         }
     };
 
@@ -139,19 +140,14 @@ const Second_Page = () => {
                         justifyContent: 'center',
                         alignItems: 'center',
                         flexDirection: 'column',
-                        minHeight: '30vh',
-                        maxHeight: '30vh',
+                        minHeight: '15vh',
+                        maxHeight: '15vh',
                         width: '100%',
                         backgroundColor: 'white',
                     }}
                 >
                     {loading ?
-                        <>
-                            <ThreeDotsWave />
-                            <Typography variant='h5' textAlign={'center'}>
-                                Sending
-                            </Typography>
-                        </>
+                        <ThreeDotsWave />
                         :
                         (
                             <>
