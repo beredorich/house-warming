@@ -1,7 +1,0 @@
-django
-djangorestframework
-django-cors-headers
-graphene-django
-requests
-pytest
-
